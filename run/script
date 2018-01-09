@@ -1,0 +1,119 @@
+mkdir beef
+cd beef
+pwd
+../discover 470 ../data/Beef/Beef_TRAIN 30 > dout
+../adjust train 470 ../data/Beef/Beef_TRAIN 30 -25 0.01 7600 0.01 > tout
+../adjust test 470 ../data/Beef/Beef_TEST 30 -25 > rout
+cd ..
+
+mkdir beetlefly
+cd beetlefly
+pwd
+../discover 512 ../data/BeetleFly/BeetleFly_TRAIN 20 > dout
+../adjust train 512 ../data/BeetleFly/BeetleFly_TRAIN 20 -25 0.01 100 1 > tout
+../adjust test 512 ../data/BeetleFly/BeetleFly_TEST 20 -25 > rout
+cd ..
+
+mkdir bird
+cd bird
+pwd
+../discover 512 ../data/BirdChicken/BirdChicken_TRAIN 20 > dout
+../adjust train 512 ../data/BirdChicken/BirdChicken_TRAIN 20 -25 0.01 100 0.1 > tout
+../adjust test 512 ../data/BirdChicken/BirdChicken_TEST 20 -25 > rout
+cd ..
+
+mkdir coffee
+cd coffee
+pwd
+../discover 286 ../data/Coffee/Coffee_TRAIN 28 > dout
+../adjust train 286 ../data/Coffee/Coffee_TRAIN 28 -25 0.01 100 0.01 > tout
+../adjust test 286 ../data/Coffee/Coffee_TEST 28 -25 > rout
+cd ..
+
+mkdir diatom
+cd diatom
+pwd
+../discover 345 ../data/DiatomSizeReduction/DiatomSizeReduction_TRAIN 16 > dout
+../adjust train 345 ../data/DiatomSizeReduction/DiatomSizeReduction_TRAIN 16 -25 0.01 13700 0.01 > tout
+../adjust test 345 ../data/DiatomSizeReduction/DiatomSizeReduction_TEST 306 -25 > rout
+cd ..
+
+mkdir ecg
+cd ecg
+pwd
+../discover 136 ../data/ECGFiveDays/ECGFiveDays_TRAIN 23 > dout
+../adjust train 136 ../data/ECGFiveDays/ECGFiveDays_TRAIN 23 -25 0.01 300 0.01 > tout
+../adjust test 136 ../data/ECGFiveDays/ECGFiveDays_TEST 861 -25 > rout
+cd ..
+
+mkdir face
+cd face
+pwd
+../discover 350 ../data/FaceFour/FaceFour_TRAIN 24 > dout
+../adjust train 350 ../data/FaceFour/FaceFour_TRAIN 24 -25 0.01 200 0.1 > tout
+../adjust test 350 ../data/FaceFour/FaceFour_TEST 88 -25 > rout
+cd ..
+
+mkdir gun
+cd gun
+pwd
+../discover 150 ../data/Gun_Point/Gun_Point_TRAIN 50 > dout
+../adjust train 150 ../data/Gun_Point/Gun_Point_TRAIN 50 -25 0.01 800 0.01 > tout
+../adjust test 150 ../data/Gun_Point/Gun_Point_TEST 150 -25 > rout
+cd ..
+
+mkdir italy
+cd italy
+pwd
+../discover 24 ../data/ItalyPowerDemand/ItalyPowerDemand_TRAIN 67 > dout
+../adjust train 24 ../data/ItalyPowerDemand/ItalyPowerDemand_TRAIN 67 -25 0.01 12000 0.1 > tout
+../adjust test 24 ../data/ItalyPowerDemand/ItalyPowerDemand_TEST 1029 -25 > rout
+cd ..
+
+mkdir light
+cd light
+pwd
+../discover 319 ../data/Lighting7/Lighting7_TRAIN 70 > dout
+../adjust train 319 ../data/Lighting7/Lighting7_TRAIN 70 -25 0.1 2500 0.1 > tout
+../adjust test 319 ../data/Lighting7/Lighting7_TEST 73 -25 > rout
+cd ..
+
+mkdir mote
+cd mote
+pwd
+../discover 84 ../data/MoteStrain/MoteStrain_TRAIN 20 > dout
+../adjust train 84 ../data/MoteStrain/MoteStrain_TRAIN 20 -25 1 46300 0.01 > tout
+../adjust test 84 ../data/MoteStrain/MoteStrain_TEST 1252 -25 > rout
+cd ..
+
+mkdir sony
+cd sony
+pwd
+../discover 70 ../data/SonyAIBORobotSurface/SonyAIBORobotSurface_TRAIN 20 > dout
+../adjust train 70 ../data/SonyAIBORobotSurface/SonyAIBORobotSurface_TRAIN 20 -25 0.01 17500 0.1 > tout
+../adjust test 70 ../data/SonyAIBORobotSurface/SonyAIBORobotSurface_TEST 601 -25 > rout
+cd ..
+
+mkdir symbol
+cd symbol
+pwd
+../discover 398 ../data/Symbols/Symbols_TRAIN 25 > dout
+../adjust train 398 ../data/Symbols/Symbols_TRAIN 25 -25 0.01 8500 0.01 > tout
+../adjust test 398 ../data/Symbols/Symbols_TEST 995 -25 > rout
+cd ..
+
+mkdir trace
+cd trace
+pwd
+../discover 275 ../data/Trace/Trace_TRAIN 100 > dout
+../adjust train 275 ../data/Trace/Trace_TRAIN 100 -25 0.01 100 0.1 > tout
+../adjust test 275 ../data/Trace/Trace_TEST 100 -25 > rout
+cd ..
+
+mkdir two
+cd two
+pwd
+../discover 82 ../data/TwoLeadECG/TwoLeadECG_TRAIN 23 > dout
+../adjust train 82 ../data/TwoLeadECG/TwoLeadECG_TRAIN 23 -25 0.01 10300 0.1 > tout
+../adjust test 82 ../data/TwoLeadECG/TwoLeadECG_TEST 1139 -25 > rout
+cd ..

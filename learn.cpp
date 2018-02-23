@@ -75,21 +75,10 @@ void readtestfile(char *data_file) {
         label[i] = atoi(tmp);
         min_c = min(min_c, label[i]);
 
-        double sumx = 0;
-        double sumx2 = 0;
-
         tmp = strtok(NULL, ", \r\n");
         for (int j = 0; j < ts_len; ++j) {
             test_x[i].push_back(atof(tmp));
             tmp = strtok(NULL, ", \r\n");
-            sumx += test_x[i][j];
-            sumx2 += test_x[i][j] * test_x[i][j];
-        }
-
-        double avgx = sumx / ts_len;
-        double stdx = sqrt(sumx2 / ts_len - avgx * avgx);
-        for (int j = 0; j < ts_len; ++j) {
-            test_x[i][j] = (test_x[i][j] - avgx) / stdx;
         }
     }
 
@@ -146,21 +135,10 @@ void readfile(char *data_file) {
         label[i] = atoi(tmp);
         min_c = min(min_c, label[i]);
 
-        double sumx = 0;
-        double sumx2 = 0;
-
         tmp = strtok(NULL, ", \r\n");
         for (int j = 0; j < ts_len; ++j) {
             data_x[i].push_back(atof(tmp));
             tmp = strtok(NULL, ", \r\n");
-            sumx += data_x[i][j];
-            sumx2 += data_x[i][j] * data_x[i][j];
-        }
-
-        double avgx = sumx / ts_len;
-        double stdx = sqrt(sumx2 / ts_len - avgx * avgx);
-        for (int j = 0; j < ts_len; ++j) {
-            data_x[i][j] = (data_x[i][j] - avgx) / stdx;
         }
     }
 
